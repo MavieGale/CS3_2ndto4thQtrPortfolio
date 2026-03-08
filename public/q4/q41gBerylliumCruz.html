@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Q4 1st Graded Exercise">
+<meta name="keywords" content="CRUD Operations">
+<meta name="author" content="Mavie Gale Cruz">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&display=swap" rel="stylesheet">
+<link rel="icon" href="../../asset/pshslogo.png" sizes="32x32" type="image/png">
+<title>Movie List</title>
+<link rel="stylesheet" href="g1style.css">
+</head>
+
+<body>
+    <div class="navbar">
+        <a href="/index.html">Home</a>
+    </div>
+
+    <div class="container">
+
+    <h1>Add a Movie</h1>
+
+    <label>Title:</label>
+    <input type="text" id="title">
+
+    <label>Year:</label>
+    <input type="number" id="year">
+
+    <label>Genre:</label>
+    <select id="genre">
+        <option>Action</option>
+        <option>Comedy</option>
+        <option>Drama</option>
+        <option>Fantasy</option>
+        <option>Horror</option>
+        <option>Sci-Fi</option>
+        <option>Romance</option>
+    </select>
+
+    <label>Rating:</label>
+
+    <div id="stars">
+        <span class="star" data-value="1">★</span>
+        <span class="star" data-value="2">★</span>
+        <span class="star" data-value="3">★</span>
+        <span class="star" data-value="4">★</span>
+        <span class="star" data-value="5">★</span>
+    </div>
+
+    <button id="addMovie">Add Movie</button>
+
+    <h2>Movie List</h2>
+    <div id="movieList"></div>
+
+
+</div>
+
+ <script src="scriptg1.js"></script>
+
+</body>
+</html>

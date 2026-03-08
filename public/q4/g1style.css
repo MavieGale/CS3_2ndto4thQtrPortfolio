@@ -1,0 +1,119 @@
+body{
+    margin:0;
+    font-family:"Karla", sans-serif;
+
+    /* background image */
+    background-image: url("/asset/genshinG1.png");
+    background-size: cover;      /* fills the screen */
+    background-position: center; /* keeps image centered */
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+
+    min-height:100vh;
+}
+
+/* main box */
+.container{
+    width:60vw;
+    max-width:800px;
+    margin:8vh auto;
+    padding:3vh 3vw;
+
+    background: rgba(255, 255, 255, 0.64); /* slight transparency */
+    border-radius:2vw;
+}
+
+/* headings */
+h1{
+    text-align:center;
+    font-size:2.5vw;
+}
+
+h2{
+    text-align:center;
+    font-size:2vw;
+}
+
+label{
+    font-size:1.2vw;
+    font-weight:bold;
+}
+
+/* inputs */
+input, select{
+    width:100%;
+    padding:1vh 1vw;
+    margin-bottom:2vh;
+    font-size:1vw;
+}
+
+/* stars */
+.star{
+    font-size:2vw;
+    color:rgb(150, 207, 253);
+    cursor:pointer;
+}
+
+.star.active{
+    color:rgb(34, 149, 244);
+}
+
+/* button */
+button{
+    width:100%;
+    padding:1.5vh;
+    font-size:1.2vw;
+    background:#2364a4;
+    color:white;
+    border:none;
+    border-radius:0.6vw;
+    cursor:pointer;
+}
+
+button:hover{
+    opacity:0.9;
+}
+
+/* movie list items */
+.movieItem{
+    background: rgba(255,255,255,0.95);
+    border: 0.15vw solid #ddd;
+    border-radius: 0.8vw;
+
+    padding: 1.5vh 1.2vw;
+    margin-bottom: 1.5vh;
+
+    font-size: 1.1vw;
+}
+
+.movieStars{
+    color:rgb(34, 149, 244);
+    font-size: 1.3vw;
+}
+
+/* Navbar */
+.navbar {
+  height: 6vh;
+  display: flex;
+  align-items: center;       /* vertical centering */
+  gap: 2vw;                  /* space between links */
+  padding-left: 2vw;
+
+  background: rgba(192, 248, 255, 0.9);
+  backdrop-filter: blur(4px);
+}
+
+/* Navbar links */
+.navbar a {
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+  font-size: 1.1vw;
+  transition: 0.2s;
+}
+
+/* Hover effect */
+.navbar a:hover {
+  text-decoration: underline;
+  opacity: 0.8;
+}
