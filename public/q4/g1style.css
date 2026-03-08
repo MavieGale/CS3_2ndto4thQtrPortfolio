@@ -91,6 +91,21 @@ button:hover{
     font-size: 1.3vw;
 }
 
+.movieItem button{
+margin-top:1vh;
+padding:0.5vh 1vw;
+font-size:0.9vw;
+background:#e53935;
+color:white;
+border:none;
+border-radius:0.4vw;
+cursor:pointer;
+}
+
+.movieItem button:hover{
+opacity:0.85;
+}
+
 /* Navbar */
 .navbar {
   height: 6vh;
