@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <meta name="author" content="Mavie Gale Cruz">
+  <meta name="description" content="testing and debugging">
+  <meta name="keywords" content="testing and debugging">
+  <title>CS3 </title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:wght@300&family=Roboto&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+
+  <style>
+    tr:nth-child(1) ~ tr:nth-child(odd) {
+      background-color: lightgray;
+      color: black;
+    }
+    td, th {
+      padding: 10px;
+    }
+    table {
+      width: 90%;
+      margin: 0 auto;
+    }
+    caption {
+      font-size: 2em;
+      font-weight: bold;
+      padding: 10px;
+    }
+    
+  </style>
+</head>
+
+<body>
+  <header>
+    <nav>
+      <a href="index.html#start">Table</a>
+      <a href="index.html#input">Input</a>
+      <a href="index.html#output">Output</a>
+    </nav>
+    
+    <h1 style="padding: 30px">Your Name / Section Mar 2026 </h1>
+  </header>
+
+  <section id="table">
+    <table> 
+      <caption> Error Logs - place errors found in the table below</caption>
+      <table> 
+    <tr class="rColor">
+        <th> item# </th> 
+        <th> code line#<br/>CSS or JS </th> 
+        <th> Description</th>
+        <th> Correction Done</th>
+    </tr>
+    <tr>
+        <td> 1 </td> 
+        <td> JS line#2- console.log(x0, y0, x, y) </td> 
+        <td> Variables x0, y0, x, y may not be defined before use </td>
+        <td> Ensured variables are properly declared and initialized before using them </td>
+    </tr>
+    <tr>
+        <td> 2 </td> 
+        <td> JS line#26 - end of plotPoint() </td> 
+        <td> Missing closing curly bracket } causing syntax error </td>
+        <td> Added closing } to complete the function </td>
+    </tr>
+
+    <tr>
+        <td> 3 </td> 
+        <td> JS line#7 - point.styleleft </td> 
+        <td> Invalid property name </td>
+        <td> Changed to point.style.left </td>
+    </tr>
+
+    <tr>
+        <td> 4 </td> 
+        <td> JS line#8 - point.stylebottom </td> 
+        <td> Invalid property name </td>
+        <td> Changed to point.style.bottom </td>
+    </tr>
+
+    <tr>
+        <td> 5 </td> 
+        <td> JS line#3- in1.innerHTML </td> 
+        <td> Variable in1 is not defined </td>
+        <td> Declared using document.getElementById("in1") </td>
+    </tr>
+
+    <tr>
+        <td> 6 </td> 
+        <td> JS line#12 to 25- out1.innerHTML </td> 
+        <td> Variable out1 is not defined </td>
+        <td> Declared using document.getElementById("out1") </td>
+    </tr>
+    <tr>
+        <td> 7 </td> 
+        <td> CSS line#51- .point </td> 
+        <td> Missing position property so point won’t move correctly </td>
+        <td> Added position: absolute; </td>
+    </tr>
+
+    <tr>
+        <td> 8 </td> 
+        <td> CSS line#38 - nav a :hover </td> 
+        <td> Incorrect selector due to extra space </td>
+        <td> Changed to nav a:hover </td>
+    </tr>
+
+    <tr>
+        <td> 9 </td> 
+        <td> CSS line#31- nav a </td> 
+        <td> Links displayed vertically instead of horizontally </td>
+        <td> Changed display: block to inline-block </td>
+    </tr>
+
+    <tr>
+        <td> 10 </td> 
+        <td> CSS line#32- nav </td> 
+        <td> Navigation bar not fixed at the top </td>
+        <td> Added position: fixed; top: 0; left: 0; </td>
+    </tr>
+    </table>
+    <hr>
+  </section>
+  
+   
+  <!--- anchors for socmed site are done with image sprites -->
+  <footer>
+    <a href="https://facebook.com"> 
+    <div class="icon facebook"></div>
+    </a>
+    <a href="https://twitter.com">
+    <div class="icon twitter"></div>
+    </a>
+    <a href="https://github.com">
+    <div class="icon github"></div>
+    </a>
+  </footer>
+ 
+</body>
+
+</html>
