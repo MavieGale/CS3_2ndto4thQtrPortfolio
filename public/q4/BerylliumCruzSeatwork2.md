@@ -137,4 +137,14 @@ The z-index property determines the order of the positioned elements. Z-index 1 
 
     c. How do you differentiate sticky from fixed (you can research on sticky)?
 
+    While both positions, fixed and sticky, keep elements visible during scrolling, they behave differently regarding the document flow and container boundaries. Fixed position is relative to the viewport. It never moves, even if the page is scrolled. While, sticky position is like a normal element until it reaches a specific scroll point (defined by top, bottom, etc.), at which point it "sticks" to the screen.
+
+
     d. If you were designing a webpage for a school event, how might you use positioning to highlight important information? Please give concrete examples.
+
+    If I was designing a webpage for a school event for example a required feedback form tracking list for the AdTech Swords, I would use positioning to highlight important information by:
+
+    - **Sticky Table Headers: Use position:** sticky; top: 0; for the header row (Name, Section, Submission Status). This ensures that even if the list has 500 students, the user always knows which column is which as they scroll down.
+    - **Fixed "Submit Feedback" Button:** Place a position: fixed; button in the bottom-right corner. This allows a student who just found their name to immediately jump to the form without scrolling all the way back to the top.
+    - **Absolute "Late" or "Pending" Badges:** Within each student's row (set to position: relative;), I could use position: absolute; to pin a bright red "Urgent" or "Missing" badge to the corner of their status cell to grab their attention instantly.
+    - **Sticky Sidebar for Navigation:** If the tracking list is divided by "Section", a position: sticky; sidebar on the left would allow users to jump between categories without losing their place on the page.
